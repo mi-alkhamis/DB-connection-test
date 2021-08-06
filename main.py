@@ -4,12 +4,6 @@ from sqlalchemy import create_engine
 from os import environ
 from sys import stderr,stdout
 
-
-
-
-DWS_MYSQL_DATABASE_URI = environ.get('DWS_MYSQL_DATABASE_URI','None' )
-
-
 # ~ Host: sql4.freesqldatabase.com
 # ~ Database name: sql4429170
 # ~ Database user: sql4429170
@@ -19,19 +13,18 @@ DWS_MYSQL_DATABASE_URI = environ.get('DWS_MYSQL_DATABASE_URI','None' )
 
 
 
+
+
 def check_db_connection():
-    
+    """
+    Check connection to MySQL server, and print a proper message
+    """
     try:
         connection = create_engine('mysql+pymysql://' + DWS_MYSQL_DATABASE_URI)
         db = connection.connect()
-        
-        
-          
     except:
         print("Error while connecting to MySQL Server", file = stderr)
-        return 1
-     
-     
+        return 1 
     print("conneted successfully to MySql Database")   
     return 0 
 
@@ -39,4 +32,4 @@ def check_db_connection():
 
 if __name__ == '__main__' :
     connection_status = check_db_connection()
-    print(connection_status)
+    exit(connection_status)
