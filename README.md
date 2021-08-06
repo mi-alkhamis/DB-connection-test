@@ -40,3 +40,7 @@ SQLAlchemy==1.4.22
 ### License
 
 This project is licensed under the GPL-3.0 License  - see the [LICENSE](https://github.com/mi-alkhamis/DB-connection-test/blob/main/LICENSE) file for details.
+
+
+[@dwsclass](https://github.com/dwsclass) dws-dev-007-python
+
