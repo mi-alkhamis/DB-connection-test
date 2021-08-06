@@ -5,7 +5,7 @@
 # DB connection Tester
 
 
-A tiny script to test MySql db connection and print a proper message. if can connect to Database return 0, if not return 1.
+A tiny script to test MySql db connection and print a proper message.if can connect to Database return 0,if not return 1.
 
 
 ### Requirements
