@@ -28,7 +28,7 @@ SQLAlchemy==1.4.22
 3.  run and enjoy it :smile:
 
 
-### How to contribute
+### How to contribute 
 
 
 - Read the issues, fork the project and do a Pull Request.
